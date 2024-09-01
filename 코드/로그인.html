@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>ONLINE STUDY</title>
+  <link rel="stylesheet" type="text/css"  href="./code2.css" media="only screen and (min-width:401px)"  />
+<style type="text/css"></style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">
+      <h1 id="logo">온라인 스터디</h1>
+      <h2 class="noVisible">메인메뉴</h2>
+      <ul id="menu">
+        <li><a href="index.html">메인화면</a></li>
+        <li class="current"><a href="로그인.html">로그인</a></li>       
+        <li><a href="검색.html">검색</a></li>
+        <li><a href="과제공유.html">과제저장함</a></li>
+      </ul>
+    </div>
+			
+		</ul>
+    <form action="index.html">
+        <fieldset>
+          <legend>소셜 로그인</legend>
+          <button type="button">          
+            <a href="https://play.google.com/store/apps/details?id=com.kakao.talk&pcampaignid=web_share">
+              <img src="https://cdn.mediatoday.co.kr/news/photo/202312/314681_440303_538.jpg" width="250px" height="100px">
+              <br> Log in with kakao</a>
+          </button>      
+        </fieldset>  
+
+ 
+        <fieldset>
+          <legend>일반 로그인</legend>
+            <input type="text" name="userName" placeholder="ID"><br>
+            <input type="password" name="userPassword" placeholder="Password">
+            <label for="remember-check"><br>
+                <input type="checkbox" id="remember-check">아이디 저장하기
+            </label><br>
+              <tr><td><input type="submit" value="Login" class="btn" onclick="alert('로그인 성공!')"></td></tr>
+        </fieldset>
+        <tr><td class="join"><a href="sign.html">회원가입</a></td></tr>
+    </form>
+
+</body>
+</html>

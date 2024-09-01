@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width, initial-scale=1.0, maximum-scale=1.0" /> 
+    <meta name="format-detection" content="telephone=no">
+	<title>ONLINE STUDY</title>
+    <link rel="stylesheet" type="text/css"  href="./code2.css" media="only screen and (min-width:401px)"  />
+	<style type="text/css"></style>
+</head>
+<body>
+    <hr class="hidden" />
+
+<div id="wrap">
+	<div id="header">
+        <h1 id="logo">온라인 스터디</h1>
+		<h2 class="noVisible">메인메뉴</h2>
+		<ul id="menu">
+            <li><a href="index.html">메인화면</a></li>
+            <li><a href="로그인.html">로그인</a></li>
+			<li><a href="검색.html">검색</a></li>
+            <li class="current"><a href="과제공유.html">과제저장함</a></li>
+			
+		</ul>
+	</div>
+    <hr class="hidden" />
+
+<form>
+    <fieldset>
+        <legend><h2>학년 및 학기 선택</h2></legend>
+<select name="grade" id ="grade">
+    <optgroup label="학년 선택">
+        <option value="-----" selected>-----</option>
+        <option value="1학년">1학년</option>
+        <option value="2학년">2학년</option>
+        <option value="3학년">3학년</option>
+        <option value="4학년">4학년</option>
+    </optgroup>
+</select>
+<select name="grade" id ="grade">
+    <optgroup label="학기 선택">
+        <option value="-----" selected>-----</option>
+        <option value="1학기">1학기</option>
+        <option value="여름학기">여름학기</option>
+        <option value="2학기">2학기</option>
+        <option value="겨울학기">겨울학기</option>
+    </optgroup>
+</select>
+
+</fieldset>
+</form>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="button">
+    </div>
+    <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+</form>
+<div class="fileContainer">
+    <div class="fileInput">
+        <p>FILE NAME: </p>
+        <p id="fileName"></p>
+    </div>
+    <div class="buttonContainer">
+        <div class="submitButton" id="submitButton">SUBMIT</div>
+    </div>
+</div>
+</div>
+
+<div class="image-show" id="image-show"></div>
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>
+
+
